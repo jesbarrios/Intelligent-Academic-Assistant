@@ -211,7 +211,7 @@ async function createCompletion(
   const chatCompletion = await ai.chat.completions.create({
     model: "ft:gpt-3.5-turbo-0125:jesus-development:intelligentacademicassistant:B2RnNRsR",
     max_tokens: 1000,
-    temperature: 0,
+    temperature: 1,
     // @ts-ignore
     messages: allMessages,
   });
